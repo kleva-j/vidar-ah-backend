@@ -59,7 +59,7 @@
     "sequelize-cli": "^5.5.0",
     "shortid": "^2.2.14",
     "slug": "^0.9.1",
-    "swagger-ui-express": "^4.1.4"
+    "swagger-ui-express": "^4.1.4",
     "underscore": "^1.9.1",
     "snyk": "^1.323.1"
   },
