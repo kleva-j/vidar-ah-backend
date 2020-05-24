@@ -12,7 +12,9 @@
     "start:dev": "babel-watch index.js",
     "build": "rm -rf dist && babel ./ -d ./dist --copy-files --ignore ./node_modules",
     "postinstall": "npm run build",
-    "test": "npm run db:undo-migration && npm run db-migrate && nyc --reporter=lcov --reporter=text mocha test/index.js --timeout=20000 --require babel-register --exit"
+    "test": "npm run db:undo-migration && npm run db-migrate && nyc --reporter=lcov --reporter=text mocha test/index.js --timeout=20000 --require babel-register --exit",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Andela Simulations Programme",
   "license": "MIT",
@@ -20,7 +22,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/register": "^7.9.0",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-es2015-destructuring": "^6.23.0",
@@ -35,11 +37,11 @@
     "errorhandler": "^1.5.0",
     "express": "^4.16.3",
     "express-jwt": "^5.3.1",
-    "express-validator": "^5.3.1",
+    "express-validator": "^6.0.0",
     "jsonwebtoken": "^8.5.0",
     "method-override": "^2.3.10",
     "methods": "^1.1.2",
-    "mongoose": "^5.4.16",
+    "mongoose": "^5.7.5",
     "mongoose-unique-validator": "^2.0.1",
     "morgan": "^1.9.0",
     "multer": "^1.4.1",
@@ -50,15 +52,16 @@
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
-    "pg": "^7.8.1",
+    "pg": "^7.18.2",
     "pusher": "^2.2.0",
     "request": "^2.87.0",
-    "sequelize": "^4.42.0",
-    "sequelize-cli": "^5.4.0",
+    "sequelize": "^4.44.4",
+    "sequelize-cli": "^5.5.0",
     "shortid": "^2.2.14",
     "slug": "^0.9.1",
     "swagger-ui-express": "^4.0.2",
-    "underscore": "^1.9.1"
+    "underscore": "^1.9.1",
+    "snyk": "^1.323.1"
   },
   "husky": {
     "hooks": {
@@ -82,5 +85,6 @@
     "nyc": "^13.3.0",
     "sinon": "^7.3.2",
     "sinon-chai": "^3.3.0"
-  }
+  },
+  "snyk": true
 }
