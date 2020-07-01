@@ -61,7 +61,7 @@
     "slug": "^0.9.1",
     "swagger-ui-express": "^4.1.4",
     "underscore": "^1.10.2",
-    "snyk": "^1.323.1"
+    "snyk": "^1.337.0"
   },
   "husky": {
     "hooks": {
