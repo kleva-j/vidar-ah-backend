@@ -60,7 +60,7 @@
     "shortid": "^2.2.14",
     "slug": "^0.9.1",
     "swagger-ui-express": "^4.1.4",
-    "underscore": "^1.10.2",
+    "underscore": "^1.12.1",
     "snyk": "^1.346.0"
   },
   "husky": {
