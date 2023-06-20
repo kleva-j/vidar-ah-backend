@@ -36,9 +36,9 @@
     "ejs": "^2.7.4",
     "errorhandler": "^1.5.0",
     "express": "^4.17.1",
-    "express-jwt": "^6.0.0",
+    "express-jwt": "^8.0.0",
     "express-validator": "^6.4.1",
-    "jsonwebtoken": "^8.5.0",
+    "jsonwebtoken": "^9.0.0",
     "method-override": "^2.3.10",
     "methods": "^1.1.2",
     "mongoose": "^5.9.19",
@@ -52,16 +52,16 @@
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.4",
-    "pg": "^7.18.2",
+    "pg": "^8.4.0",
     "pusher": "^2.2.2",
     "request": "^2.87.0",
-    "sequelize": "^4.44.4",
+    "sequelize": "^6.1.0",
     "sequelize-cli": "^5.5.1",
     "shortid": "^2.2.14",
     "slug": "^0.9.1",
     "swagger-ui-express": "^4.1.4",
     "underscore": "^1.10.2",
-    "snyk": "^1.346.0"
+    "snyk": "^1.685.0"
   },
   "husky": {
     "hooks": {
